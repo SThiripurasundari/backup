@@ -1,0 +1,8 @@
+package com.design.BuilderPattern;
+
+public class Phone {
+	String Name;
+	String Id;
+	String price;
+
+}

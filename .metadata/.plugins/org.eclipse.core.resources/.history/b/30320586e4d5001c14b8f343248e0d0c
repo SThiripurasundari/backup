@@ -1,0 +1,18 @@
+package com.samples.practise;
+
+class Node{
+	
+	int data;
+	Node next;
+	
+}
+
+
+public class LinkedLIst {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

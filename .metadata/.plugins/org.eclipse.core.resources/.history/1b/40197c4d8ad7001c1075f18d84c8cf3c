@@ -1,0 +1,23 @@
+package delete;
+
+public class MergerSortor {
+
+	public static void main(String[] args) {
+		Integer[] data = { 25, 5, 7, 12, 2, 8 };
+
+		new MergerSortor().mergeSoter(data, 0, data.length - 1);
+
+	}
+
+	private void mergeSoter(Integer[] data, int start, int end) {
+
+		if (start < end) {
+			
+			mergeSoter(data, start, end);
+			
+
+		}
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package com.samples.BFSDFS;
+
+import java.util.LinkedList;
+
+public class Graph {
+
+	private LinkedList<Integer> adj[];
+
+	public Graph(int v) {
+		
+		this.adj = new LinkedList[v];
+
+		for (int t = 0; t < v; t++) {
+
+			adj[t] = new LinkedList<Integer>();
+		}
+	}
+
+	public void addEdge(int source,int destination) {
+		
+		adj[source].add(destination);
+		adj[destination].add(source);
+	}
+
+}

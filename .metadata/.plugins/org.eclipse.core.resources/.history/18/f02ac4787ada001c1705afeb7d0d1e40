@@ -1,0 +1,38 @@
+package com.deign.factory;
+
+public class FactoryImlp {
+
+	public static void main(String[] args) {
+		
+	
+	}
+
+	
+	
+	public Shape getSubObjects(String type)
+	{
+		
+		if(type.equalsIgnoreCase("Circle"))
+
+		{
+			return new Circle();
+		}
+		if(type.equalsIgnoreCase("Circle"))
+
+		{
+			return new Circle();
+		}
+		if(type.equalsIgnoreCase("Circle"))
+
+		{
+			return new Circle();
+		}
+		
+		
+	}
+	
+	
+	
+	
+	
+}

@@ -1,0 +1,11 @@
+package com.design.adaptor;
+
+public class TruckPriceCalculator implements PriceCalculator {
+
+	@Override
+	public String getPriceInCurrency() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

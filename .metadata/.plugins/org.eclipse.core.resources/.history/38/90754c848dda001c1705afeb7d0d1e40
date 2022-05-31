@@ -1,0 +1,12 @@
+package com.design.BuilderPattern;
+
+public class BuilderImpl {
+
+	public static void main(String[] args) {
+
+		PhoneBuilder builder = new PhoneBuilder();
+		
+
+	}
+
+}

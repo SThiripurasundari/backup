@@ -1,0 +1,29 @@
+package delete;
+
+import java.util.Arrays;
+
+public class InsertionSort2 {
+
+	public static void main(String[] args) {
+		int[] data = { 2, -6, 1, 9, 4, 3 };
+
+		for (int i = 1; i < data.length-1; i++) {
+			int y = i - 1;
+			int iterateThis = data[i];
+
+			while (y <= 0 && iterateThis < data[y]) {
+				data[y + 1] = data[y];
+				y--;
+
+			}
+			
+			
+			data[y+1] = iterateThis;
+
+		}
+		
+		System.out.println("Ans :"+ Arrays.toString(data));
+
+	}
+
+}

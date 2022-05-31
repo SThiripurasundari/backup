@@ -1,0 +1,31 @@
+package com.samples.practise;
+
+class Node{
+	
+	int data;
+	Node next;
+	public int getData() {
+		return data;
+	}
+	public void setData(int data) {
+		this.data = data;
+	}
+	
+}
+
+
+public class LinkedList {
+
+	Node root;
+	public static void main(String[] args) {
+
+		
+		
+
+	}
+	
+	
+	
+	
+
+}

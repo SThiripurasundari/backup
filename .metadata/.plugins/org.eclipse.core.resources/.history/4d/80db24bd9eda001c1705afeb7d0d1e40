@@ -1,0 +1,32 @@
+package com.design.BuilderPattern;
+
+public class Phone {
+	@Override
+	public String toString() {
+		return "Phone [name=" + name + ", id=" + id + ", price=" + price + "]";
+	}
+	private Phone(String name, String id, String price) {
+		super();
+		this.name = name;
+		this.id = id;
+		this.price = price;
+	}
+	String name;
+	String id;
+	String price;
+	
+	
+	public String getName() {
+		return name;
+	}
+	
+	public String getId() {
+		return id;
+	}
+	
+	public String getPrice() {
+		return price;
+	}
+	
+
+}

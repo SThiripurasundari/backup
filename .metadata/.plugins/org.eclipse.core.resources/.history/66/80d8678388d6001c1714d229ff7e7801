@@ -1,0 +1,63 @@
+package com.samples.Stack;
+
+import java.util.ArrayList;
+
+public class MyStackGenerics<E> {
+
+	int size = 0;
+	ArrayList<E> list;
+	int top = -1;
+
+	public MyStackGenerics(int size) {
+		super();
+		this.size = size;
+		list = new ArrayList<E>(size);
+	}
+
+	public static void main(String[] args) {
+		MyStackGenerics<Integer> list = new MyStackGenerics(3);
+		list.push(10);
+		list.push(11);
+		list.push(10);
+		list.push(10);
+		list.push(10);
+	}
+
+	public void push(E data) {
+		if (top + 1 == size) {
+			System.out.println("Stack Overflow");
+
+		} else {
+			top++;
+			if (list.size() > top)
+				list.set(top, data);
+
+			else
+
+				// Creating new element
+				list.add(data);
+			// list.add(top, data);
+
+		}
+		System.out.println("TOP :" + top);
+
+	}
+
+	E top() {
+		// If stack is empty
+		if (top == -1) {
+
+			// Display message when there are no elements in
+			// the stack
+			System.out.println("Stack Underflow");
+
+			return null;
+		}
+
+		// else elements are present so
+		// return the topmost element
+		else
+			return list.get(top);
+	}
+
+}

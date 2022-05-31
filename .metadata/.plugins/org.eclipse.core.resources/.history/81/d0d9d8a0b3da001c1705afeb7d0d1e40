@@ -1,0 +1,13 @@
+package com.design.adaptor;
+
+public class UKCarPriceCalculator {
+	
+	
+	public String getPrice()
+	{
+		
+		
+		
+	}
+
+}

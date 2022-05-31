@@ -1,0 +1,61 @@
+package com.samples.practise;
+
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class QueueDelete {
+
+	int head;
+	int tail;
+	int[] list;
+	int size;
+
+	QueueDelete(int size) {
+		this.size = size;
+		head = -1;
+		tail = -1;
+		list = new int[size];
+	}
+
+	private void enqueue(int i) {
+		list[++tail] = i;
+		size++;
+
+	}
+	
+	private int deque() {
+
+		size--;
+		return [list[++head]]
+		
+		
+		
+	}
+
+	public static void main(String[] args) {
+
+		Queue<Integer> q = new LinkedList<Integer>();
+		q.add(1);
+		q.add(2);
+		q.add(3);
+		q.add(4);
+		
+		System.out.println("out :"+q.poll());
+		System.out.println("out :"+q.poll());
+		System.out.println("out :"+q.poll());
+		System.out.println("out :"+q.poll());
+
+		QueueDelete del = new QueueDelete(4);
+		del.enqueue(1);
+		del.enqueue(2);
+		del.enqueue(3);
+		del.enqueue(4);
+		
+		System.out.println("out2 :"+del.deque());
+
+	}
+
+	
+
+}

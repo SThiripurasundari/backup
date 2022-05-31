@@ -1,0 +1,91 @@
+package com.samples.practise;
+
+import java.util.Stack;
+
+public class StackImpl {
+
+	int top = -1;
+	int[] dataArray = new int[3];
+
+	public StackImpl() {
+		super();
+
+	}
+
+	public void push(int data) {
+
+		if (dataArray.length - 1 == top) {
+			System.out.println("Stack Full");
+			return;
+		}
+
+		dataArray[++top] = data;
+
+	}
+
+	public boolean isEmpty() {
+
+		if (top == -1) {
+			return true;
+		} else
+			return false;
+
+	}
+
+	public int peek() {
+
+		if (isEmpty()) {
+
+			throw new RuntimeException("Stack is empty");
+
+		} else
+
+			return dataArray[top];
+
+	}
+
+	public int pop() {
+
+		if (isEmpty()) {
+
+			throw new RuntimeException("Stack is empty");
+
+		} else {
+			return dataArray[top--];
+
+		}
+
+	}
+
+	public static void main(String[] args) {
+		Stack<Integer> original = new Stack();
+		StackImpl duplicate = new StackImpl();
+
+		original.push(1);
+		original.push(2);
+		original.push(3);
+		original.push(4);
+
+		System.out.println("pop :"+original.pop());
+		System.out.println("pop :"+original.pop());
+		System.out.println("pop :"+original.peek());
+		System.out.println("pop :"+original.peek());
+		System.out.println("pop :"+original.pop());
+
+		duplicate.push(1);
+		duplicate.push(2);
+		duplicate.push(3);
+		duplicate.push(4);
+		
+
+		System.out.println("duplicate :" + duplicate.pop());
+		System.out.println("duplicate :" + duplicate.pop());
+		System.out.println("duplicate :" + duplicate.peek());
+		System.out.println("duplicate :" + duplicate.peek());
+		System.out.println("duplicate :" + duplicate.pop());
+
+		System.out.println("Orig :" + original.toString());
+
+	}
+
+}

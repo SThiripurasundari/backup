@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;StackUsingQueuePopPeek.java&apos; to &apos;JavaProject/src/com.samples.practise&apos;&#x0D;&#x0A;- Original project: &apos;Algoritham&apos;&#x0D;&#x0A;- Destination element: &apos;JavaProject/src/com.samples.practise&apos;&#x0D;&#x0A;- Original element: &apos;com.samples.Stack.StackUsingQueuePopPeek.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="=JavaProject/src&lt;com.samples.practise" element1="/DataStructures&lt;com.samples.Stack{StackUsingQueuePopPeek.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1652850638814" units="1" version="1.0"/>
+</session>

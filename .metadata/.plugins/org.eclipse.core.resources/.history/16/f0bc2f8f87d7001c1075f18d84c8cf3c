@@ -1,0 +1,20 @@
+package delete;
+
+import java.util.Arrays;
+
+public class QuickSort {
+
+	public static void main(String[] args) {
+		int[] input = { 10, 9, -4, -1, 0, 4 };
+
+		new QuickSort().getQuickerSorter(input, 0, input.length - 1);
+		System.out.println("Ans " + Arrays.toString(input));
+
+	}
+
+	private void getQuickerSorter(int[] input, int i, int j) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

@@ -1,0 +1,22 @@
+package com.sample.Algo.Bubblesort;
+
+public class deleetTHis {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[] data = { 8, 5, 0, 9, 3, 1 };
+		System.out.println("data.length :"+data.length);
+		for (int j = 0; j < data.length -1 ; j++) {
+			// do the swap if required
+			System.out.println("data[j] :"+data[j]);
+			
+			System.out.println(" data[j + 1] :"+ data[j + 1]);
+			
+			
+			}
+			
+		}
+		
+	}
+
+

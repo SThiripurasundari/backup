@@ -1,0 +1,11 @@
+package delete;
+
+public class InsertinSort {
+
+	public static void main(String[] args) {
+		int[] input = { 10, 9, -4, -1, 0, 4 };
+		
+		
+	}
+
+}

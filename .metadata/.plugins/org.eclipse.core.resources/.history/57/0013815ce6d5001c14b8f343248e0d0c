@@ -1,0 +1,84 @@
+package com.samples.practise;
+
+import java.security.Principal;
+
+class Node {
+
+	public Node(int data) {
+		super();
+		this.data = data;
+	}
+
+	int data;
+	Node next;
+
+	public int getData() {
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+
+}
+
+public class LinkedList {
+
+	Node root;
+
+	public static void main(String[] args) {
+
+		LinkedList list = new LinkedList();
+
+		Node root = new Node(10);
+		root.next = new Node(11);
+		root.next.next = new Node(12);
+		root.next.next.next = new Node(13);
+		list.root= root;
+
+		list.print(list);
+		System.out.println("size :"+list.size(list));
+
+	}
+	
+	void insetAtMiddle(LinkedList list , Node insertThis)
+	{
+		Node fastPointer = list.root;
+		Node slowPointer = list.root;
+		
+		while(fastPointer != null)
+		{
+			fastPointer = fastPointer.next.next;
+			slowPointer = slowPointer.next;
+			
+			
+		}
+		
+		
+		
+	}
+
+	int size(LinkedList list) {
+		Node root = list.root;
+		int size = 0;
+
+		while (root != null) {
+			size++;
+			root = root.next;
+
+		}
+		return size;
+	}
+
+	void print(LinkedList list) {
+		Node root = list.root;
+
+		while (root != null) {
+			System.out.println("Data " + root.data);
+			root = root.next;
+
+		}
+
+	}
+
+}

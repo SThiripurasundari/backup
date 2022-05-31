@@ -1,0 +1,43 @@
+package com.samples.sorting;
+
+public class QuickSort {
+
+	public static void main(String[] args) {
+		int data[] = { 2, 8, 1, 0, 6, -4 };
+
+		new QuickSort().quickSort(data, 0, data.length-1);
+		
+
+	}
+
+	private void quickSort(int[] data,int start,int end ) {
+		
+		if(start<end)
+		{
+			int pivot = getPivot(data, start, end);
+			quickSort(data, start, pivot-1);
+			quickSort(data, start, pivot);
+			
+		}
+		
+		
+		
+		
+		
+	}
+
+	private int getPivot(int[] data, int start, int end) {
+	  
+		
+		int pivot = data[end];
+		
+		
+		
+		
+		
+		
+		
+		return pivot;
+	}
+
+}

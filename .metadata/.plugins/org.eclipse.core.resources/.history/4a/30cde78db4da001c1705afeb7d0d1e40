@@ -1,0 +1,25 @@
+package com.design.adaptor;
+
+public class AdaptorImpl {
+
+	public static void main(String[] args) {
+
+		PriceCalculator car = new CarPriceCalculator();
+
+		PriceCalculator truck = new TruckPriceCalculator();
+
+		UKCarPriceCalculator ukprice = new UKCarPriceCalculator();
+
+		PriceCalculator uk = new CurrencyAdaptor(ukprice);
+
+	}
+	
+	private void calculateAndPrint(PriceCalculator cal)
+	
+	{
+	
+		System.out.println(" Ans :"+ cal.getPriceInCurrency("USCar", 0));
+		
+		
+	}
+}

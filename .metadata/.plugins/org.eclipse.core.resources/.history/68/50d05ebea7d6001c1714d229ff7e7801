@@ -1,0 +1,15 @@
+package com.samples.practise;
+
+public class QueueUsingStack {
+	
+	Stack stc1 = new Stack()
+	
+	
+	
+	
+	
+	public static void main(String[] args) {
+		
+	}
+
+}

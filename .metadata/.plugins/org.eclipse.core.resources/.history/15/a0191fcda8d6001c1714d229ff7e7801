@@ -1,0 +1,24 @@
+package com.samples.practise;
+
+import java.util.Stack;
+
+public class QueueUsingStack {
+	
+	Stack<Integer> stc1 = new Stack();
+	Stack<Integer> stc2 = new Stack();
+	
+	private void enqeue(int data)
+	{
+		
+		
+	}
+	
+	
+	public static void main(String[] args) {
+		
+		
+		
+		
+	}
+
+}

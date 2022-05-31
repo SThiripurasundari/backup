@@ -1,0 +1,7 @@
+package com.design.BuilderPattern;
+
+public class PhoneBuilder {
+	String name;
+	String id;
+	String price;
+}

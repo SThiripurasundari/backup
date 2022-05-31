@@ -1,0 +1,22 @@
+package delete;
+
+public class InsertionSort2 {
+
+	public static void main(String[] args) {
+		int[] data = { 2, -6, 1, 9, 4, 3 };
+		
+		for (int i = 1; i < data.length; i++) {
+			int y = i-1;
+		
+		}
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+

@@ -1,0 +1,13 @@
+package com.samples.sorting;
+
+public class QuickSort {
+
+	public static void main(String[] args) {
+		int data[] = { 2, 8, 1, 0, 6, -4 };
+
+		new QuickSort().quickSort();
+		
+
+	}
+
+}

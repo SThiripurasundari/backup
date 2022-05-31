@@ -1,0 +1,12 @@
+package com.design.adaptor;
+
+public class AdaptorImpl {
+
+	public static void main(String[] args) {
+		
+		PriceCalculator car = new CarPriceCalculator();
+		
+		
+		
+	}
+}

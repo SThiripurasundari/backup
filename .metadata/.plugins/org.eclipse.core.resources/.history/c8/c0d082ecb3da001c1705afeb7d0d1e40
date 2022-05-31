@@ -1,0 +1,13 @@
+package com.design.adaptor;
+
+public class CurrencyAdaptor implements PriceCalculator{
+	
+	UKCarPriceCalculator uk = new UKCarPriceCalculator();
+
+	@Override
+	public String getPriceInCurrency(String model, int year) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,51 @@
+package delete;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BFSDelete {
+
+	LinkedList<Integer> list[];
+	// boolean[] visited;
+
+	BFSDelete(int vertex) {
+
+		list = new LinkedList[vertex];
+		// visited = new boolean[vertex];
+
+		for (int t = 0; t < vertex; t++) {
+			list[t] = new LinkedList<Integer>();
+		}
+
+	}
+
+	void BFS(int src, int dis) {
+		boolean visited[] = new boolean[list.length];
+		int parent[] = new int[list.length];
+
+		Queue<Integer> queue = new LinkedList<Integer>();
+		queue.add(src);
+		parent[src] = -1;
+
+		while (!queue.isEmpty()) {
+			int current = queue.poll();
+			if (current == dis)
+				break;
+
+			for (int neighbour : list[current]) {
+				if (!visited[neighbour]) {
+					queue.add(neighbour);
+					parent[neighbour] = current;
+				}
+
+			}
+
+		}
+
+	}
+
+	public static void main(String[] args) {
+
+	}
+
+}

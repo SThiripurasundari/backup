@@ -1,0 +1,46 @@
+package com.samples.practise;
+
+class Node {
+
+	public Node(int data) {
+		super();
+		this.data = data;
+	}
+
+	int data;
+	Node next;
+
+	public int getData() {
+		return data;
+	}
+
+	public void setData(int data) {
+		this.data = data;
+	}
+
+}
+
+public class LinkedList {
+
+	Node root;
+
+	public static void main(String[] args) {
+
+		LinkedList list = new LinkedList();
+
+		Node root = new Node(10);
+		root.next = new Node(11);
+		root.next.next = new Node(12);
+		root.next.next.next = new Node(13);
+
+	}
+	
+	
+	void print(LinkedList list)
+	{
+		Node root = list.root;
+		
+		
+	}
+
+}

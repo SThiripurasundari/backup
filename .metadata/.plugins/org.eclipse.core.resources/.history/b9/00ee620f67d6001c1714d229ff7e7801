@@ -1,0 +1,37 @@
+package com.samples.practise;
+
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+public class StackUsingQueue {
+
+	Queue<Integer> q1;
+	Queue<Integer> q2;
+
+	public StackUsingQueue() {
+		q1 = new LinkedList<Integer>();
+		q2 = new LinkedList<Integer>();
+	}
+
+	public void push(int data) {
+		q2.add(data);
+
+		while (!q1.isEmpty()) {
+			q2.add(q1.poll());
+
+		}
+
+		q1 = q2;
+		q2 = new LinkedList<Integer>();
+
+	}
+
+	public static void main(String[] args) {
+		
+		Stack<Integer> stack = new Stack<E>();
+		
+
+	}
+
+}

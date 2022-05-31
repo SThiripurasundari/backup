@@ -1,0 +1,27 @@
+package com.design.BuilderPattern;
+
+public class PhoneBuilder {
+	public PhoneBuilder setName(String name) {
+		this.name = name;
+		return this;
+	}
+
+	public PhoneBuilder setId(String id) {
+		this.id = id;
+		return this;
+	}
+
+	public PhoneBuilder setPrice(String price) {
+		this.price = price;
+		return this;
+	}
+
+	String name;
+	String id;
+	String price;
+
+	public Phone getPhone() {
+		new Phone(name, id, price);
+
+	}
+}

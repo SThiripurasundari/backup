@@ -1,0 +1,49 @@
+package delete;
+
+import java.util.Arrays;
+
+public class QuickSort {
+
+	public static void main(String[] args) {
+		int[] input = { 10, 9, -4, -1, 0, 4 };
+
+		new QuickSort().getQuickerSorter(input, 0, input.length - 1);
+		System.out.println("Ans " + Arrays.toString(input));
+
+	}
+
+	private void getQuickerSorter(int[] input, int start, int end) {
+
+		if (start < end) {
+			int pivotPosition = getPivotPosition(input, start, end);
+			getQuickerSorter(input, start, pivotPosition - 1);
+			getQuickerSorter(input, pivotPosition + 1, end);
+
+		}
+
+	}
+	
+	private int getPivotPosition(int[] input, int start, int end) {
+
+		int pivotData = input[end];
+
+		int k = start;
+		for (int i = start; i <= end-1; i++) {
+
+			if (input[i] < pivotData) {
+
+				int tmp = input[i];
+				input[i] = input[k];
+				input[k] = tmp;
+
+				k++;
+			}
+
+		}
+		input[end] = input[k];
+		input[k] = pivotData;
+
+		return k;
+	}
+
+}

@@ -1,0 +1,9 @@
+package delete;
+
+public class MergerSortor {
+
+	public static void main(String[] args) {
+		
+	}
+
+}

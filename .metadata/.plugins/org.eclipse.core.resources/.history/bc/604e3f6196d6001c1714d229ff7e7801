@@ -1,0 +1,80 @@
+package com.sample.Queue;
+
+public class QueueUsingArray {
+
+	int head = -1;
+	int tail = -1;
+	int[] queue;
+	int numOfItems = 0;
+
+	public QueueUsingArray(int size) {
+		this.queue = new int[size];
+	}
+
+	public void enqueue(int item) {
+		//System.out.println("Entering Enqueue  8888888888");
+		if (isFull()) {
+			throw new RuntimeException("Queue is full");
+
+		}
+		//System.out.println("tail before" + tail);
+		//System.out.println("queue.length - 1 " + (queue.length - 1));
+
+		if (tail == queue.length - 1) // deal with circular case
+		{
+			System.err.println("reset tail to -1");
+			tail = -1;
+
+		}
+
+		queue[++tail] = item;
+		//System.out.println("tail after" + tail);
+//		if (head == -1) head++;
+		numOfItems++; // add 1 to the item count
+	}
+
+	public int dequeue() {
+		//System.out.println("Entering Enqueue -----------------------------");
+		if (isEmpty())
+			throw new RuntimeException("Queue is empty");
+		//System.out.println("head" + head);
+		/System.out.println("queue.length - 1" + (queue.length - 1));
+
+		if (head == queue.length - 1) {
+			System.err.println("head == queue.length - 1");
+			head = -1;
+		}
+		numOfItems--;
+		return queue[++head];
+	}
+
+	public int peek() {
+		return queue[head + 1];
+	}
+
+	public boolean isFull() {
+		return numOfItems == queue.length;
+	}
+
+	public boolean isEmpty() {
+		return numOfItems == 0;
+	}
+
+	public static void main(String[] args) {
+		QueueUsingArray q = new QueueUsingArray(2);
+		System.out.println(q.isEmpty());
+		q.enqueue(5);
+		q.enqueue(4);
+		q.enqueue(2);
+
+		System.out.println(q.dequeue());
+		System.out.println(q.dequeue());
+		System.out.println(q.dequeue());
+		
+		
+		q.enqueue(4);
+		q.dequeue();
+
+	}
+
+}
